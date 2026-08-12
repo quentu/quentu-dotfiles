@@ -12,6 +12,8 @@
 
 -- #######################################################################################
 
+require("monitors")
+
 local colors = dofile(os.getenv("HOME") .. "/.cache/wal/colors-hyprland.lua")
 
 hl.env("QT_STYLE_OVERRIDE", "kvantum")
