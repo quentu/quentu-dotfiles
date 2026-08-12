@@ -17,7 +17,11 @@ This repository contains configuration files for various programs used in my set
 ```
 .config/
 ├── hypr/
+├── waypaper/
 └── ...
+.local/
+├── bin/
+├── share/
 ```
 
 More configurations may be added over time.
