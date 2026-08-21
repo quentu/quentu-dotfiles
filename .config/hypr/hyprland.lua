@@ -419,7 +419,7 @@ hl.bind(mainMod .. "+ SHIFT" .. " + " .. "R", hl.dsp.exec_cmd("hyprctl reload"))
 
 hl.bind(mainMod .. " + " .. "L", hl.dsp.exec_cmd("hyprlock"))
 
-hl.bind(mainMod .. " + " .. "M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit"))
+hl.bind(mainMod .. "+ SHIFT" .. " + " .. "M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit"))
 
 hl.bind(mainMod .. " + " .. "E", hl.dsp.exec_cmd("dolphin"))
 
@@ -574,7 +574,8 @@ hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("swayosd-client --output-volume 
 
 --bindel = ,XF86AudioMute, exec, swayosd-client --output-volume mute-toggle
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "M", hl.dsp.exec_cmd("swayosd-client --output-volume mute-toggle"))
+hl.bind(mainMod .. " + " .. "M", hl.dsp.exec_cmd("swayosd-client --output-volume mute-toggle"))
+hl.bind("XF86AudioMute", hl.dsp.exec_cmd("swayosd-client --output-volume mute-toggle"))
 
 --bindel = ,XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
 
